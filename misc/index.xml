@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Posts on Amir&#39;s website</title>
+    <link>https://AmirH32.github.io/misc/</link>
+    <description>Recent content in Blog Posts on Amir&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Apr 2025 13:37:56 +0100</lastBuildDate><atom:link href="https://AmirH32.github.io/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PICO Network Forensics</title>
+      <link>https://AmirH32.github.io/misc/pico-network-forensics/</link>
+      <pubDate>Sun, 20 Apr 2025 13:37:56 +0100</pubDate>
+      
+      <guid>https://AmirH32.github.io/misc/pico-network-forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PICO Linux Challs</title>
+      <link>https://AmirH32.github.io/misc/pico-linux-challs/</link>
+      <pubDate>Sun, 20 Apr 2025 13:13:13 +0100</pubDate>
+      
+      <guid>https://AmirH32.github.io/misc/pico-linux-challs/</guid>
+      <description>Magikarp Ground Mission We can connect to the machine via SSH and then authenticate with a password.
+Then if we type ls and cat the &amp;ldquo;1of3.flag.txt&amp;rdquo; file, we get the first part of the flag. We can then follow the same procedure for &amp;ldquo;instructions-to-2of3.txt&amp;rdquo;.
+This tells: &amp;ldquo;Next, go to the root of all things, more succinctly /&amp;rdquo;.
+This can be done with cd /. We then follow with ls to see the contents of the directory.</description>
+    </item>
+    
+    <item>
+      <title>PICO Disk Forensics</title>
+      <link>https://AmirH32.github.io/misc/pico-disk-forensics/</link>
+      <pubDate>Sun, 20 Apr 2025 13:12:43 +0100</pubDate>
+      
+      <guid>https://AmirH32.github.io/misc/pico-disk-forensics/</guid>
+      <description>Big Zip Again, download the big-zip-files.zip file from the challenge.
+If we run file on this file, we can see that it is a zip file.
+Now unzip the file and cd into its directory.
+To search all files and file names for a specific term, use the command:
+grep &amp;quot;&amp;lt;search term&amp;gt;&amp;quot; -r .
+Where the search term is &amp;ldquo;picoCTF&amp;rdquo; and -r is the recursive flag which will search through subdirectories.</description>
+    </item>
+    
+  </channel>
+</rss>

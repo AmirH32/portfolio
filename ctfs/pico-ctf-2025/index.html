@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PICO CTF 2025 - Amir&#39;s website</title>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="https://AmirH32.github.io/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://AmirH32.github.io/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://AmirH32.github.io/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="https://AmirH32.github.io/favicon_io/site.webmanifest">        
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
+        
+        
+        <style>
+            html, body {
+                background-color: #121212;
+                color: #f3f4f6;
+            }            
+            .border {
+                border-color: #374151;
+            }            
+            .carousel-item {
+                display: inline-block;
+                margin: 0 1rem;
+            }            
+            .flex {
+                display: flex;
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            
+            .tech-carousel {
+                overflow: hidden;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .carousel-track {
+                white-space: nowrap;
+            }
+        </style>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        <style>
+            :root {
+                color-scheme: dark;
+            }
+            
+            body {
+                @apply bg-[#121212] text-gray-100;
+            }
+
+            .tech-icon {
+                filter: grayscale(100%) brightness(200%);
+                transition: all 0.3s ease;
+            }
+            .tech-icon:hover {
+                filter: none;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            
+            .tech-carousel {
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .tech-track {
+                width: fit-content;
+                animation: scroll 20s linear infinite;
+            }
+            
+            .tech-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .tech-slide {
+                float: left;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-[#121212] text-gray-100">
+        
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0RTF18BT4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C0RTF18BT4');
+    </script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/custom.css">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex justify-between items-center">
+                <a href="https://AmirH32.github.io/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                    Amir
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>            
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                
+                
+                <a href="https://AmirH32.github.io/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="https://AmirH32.github.io/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="https://AmirH32.github.io/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="https://AmirH32.github.io/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="https://AmirH32.github.io/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                
+            </nav>
+            <div class="hidden md:flex justify-end">
+                <div class="flex items-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden transition-all duration-300">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6 border-b border-gray-800">
+                <span class="text-xl font-bold text-white">Menu</span>
+                <button id="mobile-menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                <a href="https://AmirH32.github.io/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="https://AmirH32.github.io/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="https://AmirH32.github.io/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="https://AmirH32.github.io/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="https://AmirH32.github.io/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                
+            </nav>
+            <div class="mt-auto p-6 border-t border-gray-800">
+                <div class="flex items-center justify-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    
+    function updateLocalTime() {
+        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
+        timeElements.forEach(element => {
+            if (element) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                element.textContent = timeString;
+            }
+        });
+    }
+    updateLocalTime();
+    setInterval(updateLocalTime, 1000);
+
+    
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMobileMenu() {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; 
+        }
+    }
+
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+    
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMobileMenu();
+        });
+    });
+
+    
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            themeToggleLightIcon.classList.add('hidden');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    }
+</script> 
+        <main>
+            
+<div class="w-1/2 mx-auto py-12">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
+        <h1 class="text-4xl font-bold mb-4">PICO CTF 2025</h1>
+        
+        
+        <div class="prose prose-invert max-w-none">
+            <h1 id="fantasy-ctf">Fantasy CTF</h1>
+<p>Connect via:</p>
+<p><code>nc verbal-sleep.picoctf.net 55716</code></p>
+<p>Then press enter 5 times and read the dialogue if you wish for a future based dialogue.</p>
+<p>Input <code>b</code> and hit enter 9 times.</p>
+<p>Input <code>a</code> to play the game and hit enter 5 times to find the flag</p>
+<h1 id="ph4nt0m-1ntrud3r">Ph4nt0m 1ntrud3r</h1>
+<p>Open the packet capture provided with Wireshark.</p>
+<p>The PDU data has been segmented into multiple TCP segments so if we follow the byte stream of the TCP segments we see a B64 encoded message: “bnRfdGg0dA==”.</p>
+<p>You can then decode this using a tool like Cyber Chef to then find that it looks oddly like a flag.</p>
+<p>If we take the hint and sort out the packets by time, you will see that the message starts at packet 20.</p>
+<p>We can also infer that it&rsquo;s B64 encoded as every TCP payload following this packet contains “==”. By decoding each packet’s payload up until packet 7 we can get the flag.</p>
+<h1 id="cookie-monster-secret-recipe">Cookie Monster Secret Recipe</h1>
+<p>We can visit the website provided in the description and then open your browser&rsquo;s developer tools before attempting to log in.</p>
+<p>In dev tools, go to the &ldquo;application&rdquo; tab and view your provided cookie. It should contain a <code>secret_recipe</code> value that you can then decode using Cyberchef, first use URL decoding and then Base64 decode.</p>
+<p>You can tell it is URL encoded by its use of &ldquo;%&rdquo; signs to encode special characters.</p>
+<h1 id="head-dump">Head-dump</h1>
+<p>Visit the site instance provided in the challenge description. Then, on the site, click on the Documentation link on a post by &ldquo;John Doe&rdquo;, as you can see there is an endpoint at /heapdump that can be accessed through the browser.</p>
+<p>Download the heap dump file and then use a tool like <a href="https://jsoneditoronline.org/">https://jsoneditoronline.org</a> and search for “pico” to find the flag.</p>
+<h1 id="flag-hunters">Flag Hunters</h1>
+<p>Once we connect to the program we can see it loops over and over showing user input.</p>
+<p>Let’s analyse the python code using an IDE (I used VScode), on analysis (attach github repo with source code) we can see that the <code>lip</code> variable keeps track of the current line from the beginning (including secret section).</p>
+<p>You may also notice that when we reach the return line on the first verse or chorus that is repeated, it returns to whatever number follows the return address.</p>
+<p>This program now looks less like a song parser and more like an interpreter of a new programming language that includes flow control via jumps in the lines.</p>
+<p>It does this using regular expressions to recognise strings that have the pattern “RETURN [0-9]+” but since there is no constraint on which line this string has to occurm, this control flow keyword can occur on any line.</p>
+<p>The only condition is that it has to occur at the beginning of a line or following a “;” (since <code>for line in song\_lines\[lip\].split(‘;’):</code> splits by semi colons).</p>
+<p>The program uses our input to change the following line in the hook: “CROWD” with &ldquo;Crowd: &lt;user input&gt;&rdquo;.</p>
+<p>If we set the user input to <code>;RETURN 0</code> it will split the line on the semicolon and the RETURN will jump to to line 0, which is where the secret text block starts. We then find out flag by resuming running through the program.</p>
+<p>This is using <code>;RETURN &lt;line number&gt;</code> will jump to the line we specify.</p>
+<h1 id="pie-time">PIE TIME</h1>
+<p>Firstly the name gives us a big clue, being that PIE stands for &ldquo;Position Independent Execution&rdquo; - meaning the code can be loaded and run from any position in memory.</p>
+<p>If we download both the source file and the server’s compiled binary we can learn some things:</p>
+<p>Firstly, by running <code>checksec –file=vuln</code>, we can see that PIE is enabled and so the code can be loaded into and run from any address in memory. You can see this feature in practice by repeatedly running the file and seeing the <code>main</code> address (printed by the program) change.</p>
+<p>Looking at the source code, we can see that we need to jump to the address of the <code>win</code> function to get the flag. To do this, we need to find the offset between the <code>main</code> address and <code>win</code> address so that we can jump to the right place.</p>
+<p>Let&rsquo;s start by compiling the source code with debugging flags. Now if we run the binary using the gdb debugger, we can find the addresses of both <code>main</code> and <code>win</code> <strong>at runtime</strong> and thus we can figure out the offset.</p>
+<p>Let&rsquo;s try run the program and set a breakpoint at a point before the user input. This is to find both the addresses of main and win after they have been loaded into memory.</p>
+<p>We can run <code>print(&amp;main)</code> in the gdb debugger and confirm that the output points to the right address and print(&amp;win) giving us the address of <code>win</code>. We can now continue the program and enter the address of <code>win</code> to correctly jump to <code>win</code> locally (on your machine).</p>
+<p>If we try input this same <code>win</code> address the next time we run the program we will get a seg fault <strong>because the addresses are randomised on each run</strong> due to PIE being enabled however the <strong>offsets will always remain the same</strong>! The reason being is so that the code can correctly locate each section on each run.</p>
+<p>If we use the offset between the <code>main</code> address and <code>win</code> address and subtract that from the main address outputted (since <code>main</code> appears after <code>win</code> in the source file so we have to go backwards back to <code>win</code>), we can correctly find the <code>win</code> address on each run.</p>
+<p>Let’s try this on the remote server Oh no it doesn’t work. Why? Because the server is a different environment to your laptop and the binary you had compiled on your own machine places functions at different offsets to each other when compared to the binary compiled by the server.</p>
+<p>How can we work out the server’s offset? Well, Instead of finding the offset in your binary, let&rsquo;s find the offset in the binary file provided by the challenge.</p>
+<p>This is because this binary contains the offsets of the binary used by the server. Again, use gdb and since this will load the program into memory, and do <code>print(&amp;main)</code> and <code>print(&amp;win)</code>. This provides us with the correct addresses which we can subtract to work out the correct offset.</p>
+<p>We then subtract this offset from the value of main’s address that the server displays and we get the flag!</p>
+<h1 id="red">RED</h1>
+<p>This one was pretty cool! So we are given an image called “red.png” as well as a description saying “RED, RED, RED, RED”.</p>
+<p>First things first, as an impulse, when I see an image I run exiftool on it to search for any distict metadata. Luckily, we find a field in the metadata called “Poem” which goes as:</p>
+<p>“Crimson heart, vibrant and bold,.Hearts flutter at your sight..Evenings glow softly red,.Cherries burst with sweet life..Kisses linger with your warmth..Love deep as merlot..Scarlet leaves falling softly,.Bold in every stroke.”</p>
+<p>I was puzzled by this for a while but then I noticed that if we take the capital letters of each sentence, we get “CHECKLSB” or check the least significant bit.</p>
+<p>Great, I have the perfect tool for this: <strong>zsteg</strong> and if we run <code>zsteg -a red.png</code> you will notice that the <code>b1,rgba,lsb,x</code> that checks the least significant bit on the rgba channels has a familiarish output. Seeing that it has the “==” symbols at the end, we can tell that it&rsquo;s probably a base-64 encoded string.</p>
+<p>Plug it into cyberchef and decode from base-64 and we have the flag!</p>
+<h1 id="rust-fixme-1">Rust fixme 1</h1>
+<p>There are three simple errors in the Rust file:</p>
+<ol>
+<li>
+<p>We end lines with “;”,</p>
+</li>
+<li>
+<p>We can return using “return;”</p>
+</li>
+</ol>
+<p>3). {} is used to enter variables into strings</p>
+<p>Now run the rust file (<code>cargo build</code> then <code>cargo run</code>) and you should have the flag.</p>
+<h1 id="rust-fixme-2">Rust fixme 2</h1>
+<p>There are another 3 simple errors:</p>
+<p>1). Changeable parameters must be passed by a mutable reference and have their type set as <code>&amp;mut</code> (mutable reference)</p>
+<p>2). Mutable variables must be declared as mutable</p>
+<p>3). The parameter passed in must be of type <code>&amp;mut</code></p>
+<h1 id="rust-fixme-3">Rust fixme 3</h1>
+<p>Here we can read the documents and check rust documentation on how to notify the compiler to allow an unsafe operation.</p>
+<p>This is done by using the keyword <code>unsafe</code> and wrapping the unsafe function around curly braces as done here: <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"> <span style="color:#66d9ef">let</span> decrypted_slice <span style="color:#f92672">=</span> <span style="color:#66d9ef">unsafe</span> {std::slice::from_raw_parts(decrypted_ptr, decrypted_len)};</code></pre></div></p>
+<h1 id="hashcrack">Hashcrack</h1>
+<p>First use <strong>netcat</strong> to connect to the remote server which will provide you with a hashed password.</p>
+<p>We can then easily identify the hash considering the hash is 32 hex characters long (MD5 hashes are 128-bit). 128/32=4 and we know that each hex character represents 4 bits so it is probably an MD5 hash.</p>
+<p>We can then use the <strong>John The Ripper</strong> tool to crack the hash using the command <code>John --wordlist=/usr/share/wordlists/rockyou.txt --format=raw-md5 &lt;filename&gt;</code>. The cracked password turns out to be: “password123”</p>
+<p>Next we get a hash that looks to be SHA-1 considering SHA-1 is 160-bits which is equivalent to 40 hex characters and the hash is 40 characters long.</p>
+<p>Using <strong>John The Ripper</strong> again, <code>John --wordlist=/usr/share/wordlists/rockyou.txt –format=sha-1 &lt;filename&gt;</code>. The cracked password turns out to be: “letmein”.</p>
+<p>The next hash we get is 64 hex characters long or a 256 (64*4) bit hash which is indicative of SHA-256. Using <strong>John The Ripper</strong> again with the command <code>John --wordlist=/usr/share/wordlists/rockyou.txt –format=sha-256 &lt;filename&gt;</code>, the password is cracked to: “qwerty098”.</p>
+<p>Once we input this, we finally get the flag.</p>
+<h1 id="flags-are-stepic">flags are stepic</h1>
+<p>I’m ashamed to admit how long this took me. I was quick to find the only flag that did not represent a country, which was Upanzi Republic but from there I was lost. I then tried looking at the source HTML file for any clues and also the downloaded the png image.</p>
+<p>Due to my own negligence, I completely ignored the title and tried using stenography tools like <strong>binwalk</strong> and <strong>zsteg</strong> to find the hidden data.</p>
+<p>Finally after looking back on the title, I realised I should probably use the <strong>stepic</strong> tool with the command <code>stepic -d -i &lt;image\_file&gt;\</code> which produced the flag.</p>
+<h1 id="n0s4n1ty-1">N0s4n1ty 1</h1>
+<p>This challenge gives you the ability to upload files to a webserver. First I uploaded a normal png image which worked and I was then able to view it by visiting “/uploads/<!-- raw HTML omitted -->.png”.</p>
+<p>I then tried uploading different file formats (including php), as one does, and saw that there was no file sanitisation.</p>
+<p>Now I had to check if the server would interpret and run my PHP file so I put together a PHP file with the following sbody: <code>&lt;?php echo &quot;Hello, World!&quot;; ?&gt;\</code> and luckily the server ran the code displaying &ldquo;Hello, World!&rdquo; on the upload path for that filename. Great!</p>
+<p>Now I went straight to over complicating it and crafting a php reverse shell file using <strong>msfvenom</strong> and <strong>meterpreter</strong> however I couldn’t get the listener to catch the connection initiation so I decided to use a more simple approach.</p>
+<p>Going back to the basics, I wrote a quick small php script:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+
+<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($_GET[<span style="color:#e6db74">&#39;cmd&#39;</span>])) {
+    <span style="color:#a6e22e">system</span>($_GET[<span style="color:#e6db74">&#39;cmd&#39;</span>]);
+}
+
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div></p>
+<p>This checks if the <code>cmd</code> parameter is passed in the URL, done by entering <code>?cmd=</code> after entering the file path into the URL. If a command is passed via the URL, the server’s OS is used to execute the command passed into the <code>cmd</code> paramter.</p>
+<p>We can then pass <code>?cmd=sudo -l</code> which shows that the user, called “www—data”, has full sudo privileges without a password allowing me to access the <code>/root</code> directory and retrieve the flag by running the command <code>?cmd=sudo cat /root/flag.txt</code> which then prints the flag.</p>
+<h1 id="hash-only-1">hash-only-1</h1>
+<p>We are given a host to SSH to and the password to authenticate the SSH connection. Upon establishing an authorised, secure connection, we can run <code>ls</code> to find a file called <code>flaghasher</code>. If we run <code>file flaghasher</code> we can see that it is a binary.</p>
+<p>Let’s run the binary. It returns the MD5 hash of the flag and shows us the location of the flag. Perhaps we can simply navigate and <code>cat</code> the flag file. Unfortunately, we don’t have permissions.</p>
+<p>Instead, let’s try something a little more complex. After some thought, I realised the <code>flaghasher</code> binary might be calling the <code>md5sum</code> command to compute the hash of the file.</p>
+<p>Let’s create a script that changes what this command does:</p>
+<p><code>#!/bin/sh cat &quot;$1&quot;</code></p>
+<p>This script simply runs <code>cat</code> on the first argument.</p>
+<p>Now we need to create the script, but we don’t have vim or nano. However there is a tool  we can always rely on: <code>echo</code>. Let&rsquo;s run run the commands: <code>echo '#!/bin/sh' &gt; /tmp/md5sum</code> and <code>echo '#!/bin/sh' &gt; md5sum</code>.</p>
+<p>Now that we have our script created, let’s make it executable with <code>chmod +x md5sum</code>. Finally, we can prepend it to the beginning of our <code>PATH</code> environment variable by doing: <code>export PATH=.:$PATH</code>.</p>
+<p>Now if we run <code>flaghasher</code> it will call <code>md5sum</code> and since it doesn’t specify the full path, the system uses the first <code>md5sum</code> in its <code>PATH</code> variable which is our script.</p>
+<p>This then provides the flag.</p>
+<p>This is called a PATH manipulation attack.</p>
+<h1 id="ssti1">SSTI1</h1>
+<p>This provides us with a website to visit that renders a new page with whatever input you type in.</p>
+<p>Considering the name is “SSTI” we will try Server Side Template Injection. First we can run <code>{{ 7 \* 7 }}</code> to see if the SST injection works, it does and we get a page displaying the result - 49.</p>
+<p>We can now pass in the following payload (assuming the templates are in Jinja2):</p>
+<p><code>{{ self.__init__.__globals__.__builtins__.__import__('os').popen('ls').read() }}</code></p>
+<p><code>self</code> refers to the current template Jinja2 object, <code>__init__</code> allows us to access the object’s initialization context (including global variables), <code>__globals__</code> is a dictionary containing the global variables used to access Python’s built-in functions, <code>__builtins__</code> is a module that contains Python’s built in functions and this allows us to run the built-in function <code>__import__</code> to import the <code>os</code> module to interact with the operating system.</p>
+<p><code>popen</code> is a method in the <code>os</code> module that opens a pipe from a shell command which we can then read.</p>
+<p>This then returns a page of files in the current working directory of the host which contains:</p>
+<p><code>__pycache__ app.py flag requirements.txt</code></p>
+<p>We can then run the following payload:</p>
+<p><code>{{ self.__init__.__globals__.__builtins__.__import__('os').popen('cat flag').read() }}</code></p>
+<p>to return the contents of the flag file.</p>
+<h1 id="tap-into-hash">Tap into Hash</h1>
+<p>This CTF actually taught me how the block chain works.</p>
+<p>This one was quite fun apart from me debugging for 30 minutes to then realize that the key in the file is the key pre-hashing and I needed to hash it first.</p>
+<p>Nevertheless, you are provided with a source file running through a block chain algorithm that prints a key as well as the encrypted blockchain hash.</p>
+<p>There is another file containing a key and encrypted blockchain hash we must decrypt.</p>
+<p>Running through the source file, the important functions are: <code>encrypt</code>, <code>pad</code> and <code>xor_bytes</code>.</p>
+<p>If we walk through the encrypt process to understand how we must decrypt, we can see that we first need to decrypt the encrypted blockchain.</p>
+<p>So let&rsquo;s hash the key from the flag file provided and using a similar process to encryption, we XOR it with every 16 byte block in the encrypted data (this is because XOR is <strong>involutive</strong> and applying it twice simply undoes its operation).</p>
+<p>We can now try to decode and print the decrypted hash but this fails as we have not accounted for the added padding.</p>
+<p>So we need to remove the padding, luckily the padding uses the length of the padding as the value to pad with. So if we take the last byte (sure to be padding) and remove that many bytes from the end of the decrypted hash, the padding is removed and we can decode and print the hash.</p>
+<p>The flag can be found in the middle of the hash.</p>
+<h1 id="even-rsa-can-be-broken">EVEN RSA CAN BE BROKEN???</h1>
+<p>For this challenge, we can use the hints to see that the prime numbers generated aren’t truly random.</p>
+<p>Looking at the &ldquo;encrypt.py&rdquo; source code we can see both the public and private key generation process. <code>p</code> and <code>q</code> are obtained by a mysterious <code>get\_primes</code> function where both are half of the length of the key in size.</p>
+<p>The private key is then generated using the modular inverse of e modulo (p-1)*(q-1) – known as <strong>Euler’s totient function</strong>.</p>
+<p>The plaintext is then encrypted by modularly raising m to the power of e modulus N.</p>
+<p>The plaintext in this case is the flag.</p>
+<p>If we run connect to the server multiple times, using its outputs, we can see that N isn’t truly random and shares a GCD of 2 between all Ns.</p>
+<p>This suggests either <code>p</code> or <code>q</code> is always set to 2. Knowing this we can create a python script that uses the N, the ciphertext, sets <code>p</code> as 2 and <code>q</code> as N//p. We can then generate the private key using the same process in the &ldquo;encrypt.py&rdquo; file where e = 65537 and decrypt the text by raising it to the modular power of d modulo N.</p>
+<p>Then we can convert the decrypted message from a long integer to bytes and then decode it into a string we can print.</p>
+<h1 id="bitlocker-1">Bitlocker-1</h1>
+<p>The challenge mentions a user “Jacky” using a simple password to encrypt their bitlocker drive, for which we can install the image of using the link.</p>
+<p>This provides us with a <code>.dd</code> file or disk image file (a byte-for-byte copy of the storage device)</p>
+<p>It is quite clear we will need to decrypt this bitlocker disk image and a great tool to use would be <strong>John The Ripper</strong>.</p>
+<p>We can then use the subtool <code>bitlocker2john &lt;file path to disk image&gt;</code> which produces the output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">Encrypted device bitlocker-1.dd opened, size 100MB
+
+Signature found at 0x3
+
+Version: 8
+
+Invalid version, looking for a signature with 
+valid version...
+
+Signature found at 0x2195000
+
+Version: 2 (Windows 7 or later)
+
+VMK entry found at 0x21950c5
+
+VMK encrypted with Recovery Password found at 0x21950e6
+
+Salt: 2b71884a0ef66f0b9de049a82a39d15b
+
+Searching AES-CCM from 0x2195102
+
+Trying offset 0x2195195....
+
+VMK encrypted with AES-CCM!!
+
+RP Nonce: 00be8a46ead6da0106000000
+
+RP MAC: a28f1a60db3e3fe4049a821c3aea5e4b
+
+RP VMK: a1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048
+b2ef2c9702e298e4c20743126ec8bd29bc6d58
+
+VMK entry found at 0x2195241
+
+VMK encrypted with User Password found at 2195262
+
+VMK encrypted with AES-CCM
+
+UP Nonce: d04d9c58eed6da010a000000
+
+UP MAC: 68156e51e53f0a01c076a32ba2b2999a
+
+UP VMK: fffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b
+7b5559d71ba31b6779c6f41412fd6869442d66d
+
+Signature found at 0x2c1d000
+
+Version: 2 (Windows 7 or later)
+
+VMK entry found at 0x2c1d0c5
+
+VMK entry found at 0x2c1d241
+
+Signature found at 0x373a000
+
+Version: 2 (Windows 7 or later)
+
+VMK entry found at 0x373a0c5
+
+VMK entry found at 0x373a241
+
+User Password hash:
+
+$bitlocker$0$16$cb4809fe9628471a411f8380e0f668db$1048576$1
+2$d04d9c58eed6da010a000000$60$68156e51e53f0a01c076a32ba2b2
+999afffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b5559
+d71ba31b6779c6f41412fd6869442d66d
+
+Hash type: User Password with MAC verification 
+(slower solution, no false positives)
+
+$bitlocker$1$16$cb4809fe9628471a411f8380e0f668db$1048576$
+12$d04d9c58eed6da010a000000$60$68156e51e53f0a01c076a32ba2
+b2999afffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b
+5559d71ba31b6779c6f41412fd6869442d66d
+
+Hash type: Recovery Password fast attack
+
+$bitlocker$2$16$2b71884a0ef66f0b9de049a82a39d15b$1048576$
+12$00be8a46ead6da0106000000$60$a28f1a60db3e3fe4049a821c3a
+ea5e4ba1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048b2
+ef2c9702e298e4c260743126ec8bd29bc6d58
+
+Hash type: Recovery Password with MAC verification 
+(slower solution, no false positives)
+
+$bitlocker$3$16$2b71884a0ef66f0b9de049a82a39d15b$1048576
+$12$00be8a46ead6da0106000000$60$a28f1a60db3e3fe4049a821c
+3aea5e4ba1957baea68cd29488c0f3f6efcd4689e43f8ba3120a3304
+8b2ef2c9702e298e4c260743126ec8bd29bc6d58</code></pre></div>
+<p> </p>
+<p>We know that the user’s password is what we want to crack so we can simply copy and paste it into a text file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">$bitlocker$0$16$cb4809fe9628471a411f8380e0f668db$1048576$12
+$d04d9c58eed6da010a000000$60$68156e51e53f0a01c076a32ba2b299
+9afffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b5559d7
+1ba31b6779c6f41412fd6869442d66d</code></pre></div>
+<p> </p>
+<p>Then you can use the command <code>./john --format=bitlocker –wordlist=&lt;path to wordlist&gt; bitlocker.txt</code> to crack the bitlocker password using the wordlist of your choice. After a little while, the password is cracked as: “jacqueline”</p>
+<p>Now we need to decrypt and mount the drive, lets create a mount point using <code>sudo mkdir -p /mnt/bitlocker</code>.</p>
+<p>I then used the <strong>dislocker</strong> tool to mount the bitlocker and decrypt the bitlocker drive <code>sudo dislocker -V bitlocker-1.dd -ujacqueline -- /mnt/bitlocker</code>, this will unlock the bitlocker volume using jacqueline as the password and mount it on /mnt/bitlocker.</p>
+<p>Now we can mount the file as if it were a disk using the command <code>sudo mount -o loop,ro /mnt/bitlocker/dislocker-file /mnt/bitlocker</code> this will mount it as if it were a physical read-only disk allowing access in the bitlocker mountpoint.</p>
+<p>We can then run <code>cd /mnt/bitlocker</code> to find the flag.txt file that we can then <code>cat</code> to find the flag.</p>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+        
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-gray-800 pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">                
+                <p class="text-gray-500 text-xm ">© 2025 Amir</p>
+                <p class="text-gray-500 text-xm pb-12">Built using <a href="https://gohugo.io/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">Hugo</a>. Take a look at my <a href="https://github.com/prxshetty/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+</style> 
+    </body>
+</html> 

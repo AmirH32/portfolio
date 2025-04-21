@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me - Amir&#39;s website</title>
+        <title>PICO Linux Challs - Amir&#39;s website</title>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="https://AmirH32.github.io/favicon_io/apple-touch-icon.png">
@@ -120,7 +120,7 @@
     
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../../css/custom.css">
     <style>
         body {
             font-family: 'Space Grotesk', sans-serif;
@@ -145,7 +145,7 @@
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 
                 
-                <a href="https://AmirH32.github.io/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                <a href="https://AmirH32.github.io/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
                 
                 <a href="https://AmirH32.github.io/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
                 
@@ -178,7 +178,7 @@
             </div>
             <nav class="flex flex-col p-6 space-y-4">
                 
-                <a href="https://AmirH32.github.io/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                <a href="https://AmirH32.github.io/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
                 
                 <a href="https://AmirH32.github.io/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
                 
@@ -281,188 +281,34 @@
 </script> 
         <main>
             
-<div class="max-w-4xl mx-auto px-4 py-12">
-    <h1 class="text-5xl font-bold mb-6 text-gray-100">About Me</h1>
+<div class="w-1/2 mx-auto py-12">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
+        <h1 class="text-4xl font-bold mb-4">PICO Linux Challs</h1>
+        
+        
+        <div class="prose prose-invert max-w-none">
+            <h1 id="magikarp-ground-mission">Magikarp Ground Mission</h1>
+<p>We can connect to the machine via SSH and then authenticate with a password.</p>
+<p>Then if we type ls and cat the &ldquo;1of3.flag.txt&rdquo; file, we get the first part of the flag. We can then follow the same procedure for &ldquo;instructions-to-2of3.txt&rdquo;.</p>
+<p>This tells: &ldquo;Next, go to the root of all things, more succinctly <code>/</code>&rdquo;.</p>
+<p>This can be done with <code>cd /</code>. We then follow with ls to see the contents of the directory. Here we can find &ldquo;2of3.flag.txt&rdquo; that we can then <code>cat</code> to get the next part of the flag.</p>
+<p>We can also <code>cat</code> the &ldquo;instructions-to-3of3.txt&rdquo; file and the contents say &ldquo;Lastly, ctf-player, go home&hellip; more succinctly <code>~</code>&rdquo;</p>
+<p>If we do <code>cd</code> or <code>cd ~</code> we can find the &ldquo;3of3.flag.txt&rdquo; file and then <code>cat</code> that to get the last part of the flag.</p>
+<h1 id="first-grep">First Grep</h1>
+<p>We can download the file using <code>wget</code> and then run <code>file</code> on the file to see that it is an ASCII/plaintext text file.</p>
+<p>We can then use <code>egrep</code> or <code>grep</code> followed by the regex: &ldquo;picoCTF&rdquo; to find a string that contains &ldquo;picoCTF&rdquo; which is the prefix flag format.</p>
+<p>This provides us with the flag.</p>
+<h1 id="first-find">First Find</h1>
+<p>For this challenge we download a zip file (you can tell by the extension). If we run <code>file</code> on the file, this confirms that it is a zip file.</p>
+<p>We can then extract the zip file using <code>unzip files.zip</code></p>
+<p>To find the &ldquo;uber-secret.txt&rdquo; file we can simply run <code>find . -name uber-secret.txt</code> from the directory where we extracted the zip file to.</p>
+<p>This shows us that the &ldquo;uber-secret.txt&rdquo; resides in the path &ldquo;files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets/uber-secret.txt&rdquo;.</p>
+<p>We can then run <code>cd files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets</code> and then run <code>cat uber-secret.txt</code> to find the flag.</p>
+<p>Also remember to show hidden files run <code>ls -al</code> instead of <code>ls -l</code> or <code>ls</code>.</p>
 
-    <div class="flex flex-col gap-8">
-        <div class="flex-grow">
-            <div class="bg-[#121212] p-8 rounded-lg mb-8">
-                <div class="prose prose-invert prose-lg max-w-none">
-                    <div class="text-lg">
-                        <p>I am an 2nd year Undergraduate student at the University Of Cambridge and a keen CyberSecurity enthusiast (espeically when it comes to red teaming and offensive security).</p>
-
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="bg-[#121212] p-8 rounded-lg mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-gray-100">Developer Profiles</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    
-                    <a href="https://leetcode.com/u/Ah2344/" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300 group">
-                        <svg class="w-7 h-7 text-gray-400 shrink-0 group-hover:text-gray-200 transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
-                        </svg>
-                        <div class="min-w-0">
-                            <div class="text-gray-400 group-hover:text-gray-200 transition-colors duration-300 truncate">LeetCode</div>
-                            <div class="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 truncate">Ah2344</div>
-                        </div>
-                    </a>
-
-                    
-                    <a href="https://play.picoctf.org/users/AnakinBlueSky" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300 group">
-                        <img src="../images/pico.svg" alt="PicoCTF Logo" class="w-7 h-7 shrink-0 group-hover:opacity-80 transition-opacity duration-300" />
-                        <div class="min-w-0">
-                            <div class="text-gray-400 group-hover:text-gray-200 transition-colors duration-300 truncate">Pico CTF</div>
-                            <div class="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 truncate">AnakinBlueSky</div>
-                        </div>
-                    </a>
-
-                    
-                    <a href="https://ctf.hackthebox.com/user/profile/560340" target="_blank" class="contact-link flex items-center gap-4 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300 group">
-                        <img src="../images/htb_logo.svg" alt="PicoCTF Logo" class="w-7 h-7 shrink-0 group-hover:opacity-80 transition-opacity duration-300" />
-                        <div class="min-w-0">
-                            <div class="text-gray-400 group-hover:text-gray-200 transition-colors duration-300 truncate">Hack The Box</div>
-                            <div class="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300 truncate">Turn0ver</div>
-                        </div>
-                    </a>
-
-                    
-
-                    
-                </div>
-            </div>
-            
-            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Honors & Awards</h2>
-                <div class="space-y-6">
-                    
-                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
-                        <div class="text-gray-400 text-sm">SIGINT</div>
-                        <div class="flex items-center gap-2">
-                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">pwnED 6 - 2nd place</h3>
-                        </div>
-                        <div class="text-gray-400 flex items-center gap-2 text-sm">
-                            <span>Apr 2025</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
-                        <div class="text-gray-400 text-sm">UKMT</div>
-                        <div class="flex items-center gap-2">
-                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">Senior Maths Challenge Gold Certificate</h3>
-                        </div>
-                        <div class="text-gray-400 flex items-center gap-2 text-sm">
-                            <span>Nov 2021</span>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col gap-2 p-4 rounded-lg bg-[#121212] border border-gray-800 transition-all duration-300">
-                        <div class="text-gray-400 text-sm">UKMT</div>
-                        <div class="flex items-center gap-2">
-                            <h3 class="text-xl md:text-2xl font-semibold text-gray-100">Junior Maths Challenge Gold Certificate</h3>
-                        </div>
-                        <div class="text-gray-400 flex items-center gap-2 text-sm">
-                            <span>Jan 2018</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="bg-[#121212] p-6 md:p-8 rounded-lg mb-8">
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-100">Certifications</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    
-                    <a href="" 
-                       target="_blank"
-                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
-                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">First CVSS 4.0 Certificate</span>
-                            </h3>
-                        </div>
-                        <p class="text-gray-400 text-sm mb-1">Issued: Jul 2024</p>
-                    </a>
-                    
-                    <a href="" 
-                       target="_blank"
-                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
-                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Microsft Sentinel Ninja Certificate</span>
-                            </h3>
-                        </div>
-                        <p class="text-gray-400 text-sm mb-1">Issued: Jul 2024</p>
-                    </a>
-                    
-                    <a href="" 
-                       target="_blank"
-                       class="certification-link flex flex-col h-full p-4 md:p-6 rounded-lg bg-[#121212] border border-gray-800 hover:shadow-md transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-lg md:text-xl font-semibold text-gray-100">
-                                <span class="animated-link text-gray-100 hover:text-gray-200 transition-colors duration-300">Qualys Certificate Suite</span>
-                            </h3>
-                        </div>
-                        <p class="text-gray-400 text-sm mb-1">Issued: Jun/Jul 2024</p>
-                    </a>
-                    
-                </div>
-            </div>
-
-            
-            </div>
         </div>
     </div>
 </div>
-
-<style>
-    .prose {
-        @apply text-gray-300;
-        font-size: 1.125rem;
-    }
-    .prose p {
-        @apply text-gray-300 mb-6;
-        line-height: 1.9;
-        font-size: 1.00rem;
-    }
-    .prose p + p {
-        margin-top: 2rem;
-    }
-
-    .animated-link {
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-    }
-    
-    .animated-link::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 1px;
-        bottom: -1px;
-        left: 0;
-        background-color: #ffffff;
-        transition: width 0.3s ease-in-out;
-    }
-    
-    .animated-link:hover::after {
-        width: 100%;
-    }
-    
-    .certification-link {
-        transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease;
-    }
-    
-    
-    .certification-link .animated-link::after {
-        height: 1.5px;
-        background-color: rgb(255, 255, 255);
-        bottom: -3px;
-    }
-</style>
 
         </main>
         
