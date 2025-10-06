@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Main Page on Amir&#39;s website</title>
+    <link>https://AmirH32.github.io/</link>
+    <description>Recent content in Main Page on Amir&#39;s website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Sep 2025 19:11:34 +0100</lastBuildDate>
+    <atom:link href="https://AmirH32.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OFTW3</title>
+      <link>https://AmirH32.github.io/conferences/oftw3/</link>
+      <pubDate>Tue, 30 Sep 2025 19:11:34 +0100</pubDate>
+      <guid>https://AmirH32.github.io/conferences/oftw3/</guid>
+      <description>&lt;p&gt;My first &amp;ldquo;objective for the win&amp;rdquo; conference. I&amp;rsquo;d seen this advertised in the CyberSecurity discord, for which I am now president, and decided this would be a great opportunity to learn more about Apply device security.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d never looked into Apple security, neither do I own any Apple devices. So this was a first, I thought why not? I love security so I might as well explore and find out which niche I want to fall into.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PICO Network Forensics</title>
+      <link>https://AmirH32.github.io/misc/pico-network-forensics/</link>
+      <pubDate>Sun, 20 Apr 2025 13:37:56 +0100</pubDate>
+      <guid>https://AmirH32.github.io/misc/pico-network-forensics/</guid>
+      <description>&lt;h1 id=&#34;packets-primer&#34;&gt;Packets Primer&lt;/h1&gt;&#xA;&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;&#xA;&lt;p&gt;Download the packet capture file and use packet analysis software to find the flag.&lt;/p&gt;&#xA;&lt;h3 id=&#34;method&#34;&gt;Method&lt;/h3&gt;&#xA;&lt;p&gt;For this challenge we can use wireshark to inspect the pcap file. Upon doing so, we see 9 packets.&lt;/p&gt;&#xA;&lt;p&gt;If we look at the protocol field of the packets, 4 of these are ARP packets. To filer these out we can do &lt;code&gt;!arp&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;These leaves us with 5 packets, the first 3 are in the connection setup phase (TCP handshake).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PICO Linux Challs</title>
+      <link>https://AmirH32.github.io/misc/pico-linux-challs/</link>
+      <pubDate>Sun, 20 Apr 2025 13:13:13 +0100</pubDate>
+      <guid>https://AmirH32.github.io/misc/pico-linux-challs/</guid>
+      <description>&lt;h1 id=&#34;magikarp-ground-mission&#34;&gt;Magikarp Ground Mission&lt;/h1&gt;&#xA;&lt;p&gt;We can connect to the machine via SSH and then authenticate with a password.&lt;/p&gt;&#xA;&lt;p&gt;Then if we type ls and cat the &amp;ldquo;1of3.flag.txt&amp;rdquo; file, we get the first part of the flag. We can then follow the same procedure for &amp;ldquo;instructions-to-2of3.txt&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This tells: &amp;ldquo;Next, go to the root of all things, more succinctly &lt;code&gt;/&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This can be done with &lt;code&gt;cd /&lt;/code&gt;. We then follow with ls to see the contents of the directory. Here we can find &amp;ldquo;2of3.flag.txt&amp;rdquo; that we can then &lt;code&gt;cat&lt;/code&gt; to get the next part of the flag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PICO Disk Forensics</title>
+      <link>https://AmirH32.github.io/misc/pico-disk-forensics/</link>
+      <pubDate>Sun, 20 Apr 2025 13:12:43 +0100</pubDate>
+      <guid>https://AmirH32.github.io/misc/pico-disk-forensics/</guid>
+      <description>&lt;h1 id=&#34;big-zip&#34;&gt;Big Zip&lt;/h1&gt;&#xA;&lt;p&gt;Again, download the big-zip-files.zip file from the challenge.&lt;/p&gt;&#xA;&lt;p&gt;If we run &lt;code&gt;file&lt;/code&gt; on this file, we can see that it is a zip file.&lt;/p&gt;&#xA;&lt;p&gt;Now unzip the file and &lt;code&gt;cd&lt;/code&gt; into its directory.&lt;/p&gt;&#xA;&lt;p&gt;To search all files and file names for a specific term, use the command:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;grep &amp;quot;&amp;lt;search term&amp;gt;&amp;quot; -r .&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Where the search term is &amp;ldquo;picoCTF&amp;rdquo; and &lt;code&gt;-r&lt;/code&gt; is the recursive flag which will search through subdirectories.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PICO CTF 2025</title>
+      <link>https://AmirH32.github.io/ctfs/pico-ctf-2025/</link>
+      <pubDate>Mon, 07 Apr 2025 14:18:49 +0100</pubDate>
+      <guid>https://AmirH32.github.io/ctfs/pico-ctf-2025/</guid>
+      <description>&lt;h1 id=&#34;fantasy-ctf&#34;&gt;Fantasy CTF&lt;/h1&gt;&#xA;&lt;p&gt;Connect via:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;nc verbal-sleep.picoctf.net 55716&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then press enter 5 times and read the dialogue if you wish for a future based dialogue.&lt;/p&gt;&#xA;&lt;p&gt;Input &lt;code&gt;b&lt;/code&gt; and hit enter 9 times.&lt;/p&gt;&#xA;&lt;p&gt;Input &lt;code&gt;a&lt;/code&gt; to play the game and hit enter 5 times to find the flag&lt;/p&gt;&#xA;&lt;h1 id=&#34;ph4nt0m-1ntrud3r&#34;&gt;Ph4nt0m 1ntrud3r&lt;/h1&gt;&#xA;&lt;p&gt;Open the packet capture provided with Wireshark.&lt;/p&gt;&#xA;&lt;p&gt;The PDU data has been segmented into multiple TCP segments so if we follow the byte stream of the TCP segments we see a B64 encoded message: “bnRfdGg0dA==”.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://AmirH32.github.io/about/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://AmirH32.github.io/about/</guid>
+      <description>&lt;p&gt;If you are looking to employ me please skip below and go to the &amp;ldquo;&lt;strong&gt;For future employers&lt;/strong&gt;&amp;rdquo; section.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;As a wise man once said, &amp;ldquo;I&amp;rsquo;m the smartest programmer thats ever lived.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;I am this close to going off the grid and living in the middle of nowhere.&lt;/li&gt;&#xA;&lt;li&gt;Vim + Emacs = Doom Emacs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;for-future-employers&#34;&gt;For future employers:&lt;/h3&gt;&#xA;&lt;p&gt;I am an 2nd year Undergraduate student at the University Of Cambridge and a keen CyberSecurity enthusiast (espeically when it comes to red teaming and offensive security).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blogs</title>
+      <link>https://AmirH32.github.io/blogs/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://AmirH32.github.io/blogs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact details</title>
+      <link>https://AmirH32.github.io/contact/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://AmirH32.github.io/contact/</guid>
+      <description>&lt;p&gt;You can contact me on the following platforms:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>https://AmirH32.github.io/experience/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://AmirH32.github.io/experience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://AmirH32.github.io/projects/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>https://AmirH32.github.io/projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

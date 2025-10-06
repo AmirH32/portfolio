@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OFTW3 - Amir&#39;s website</title>
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="http://localhost:1313/favicon_io/site.webmanifest">        
+        <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
+        
+        
+        <style>
+            html, body {
+                background-color: #121212;
+                color: #f3f4f6;
+            }            
+            .border {
+                border-color: #374151;
+            }            
+            .carousel-item {
+                display: inline-block;
+                margin: 0 1rem;
+            }            
+            .flex {
+                display: flex;
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            
+            @media (min-width: 768px) {
+                .md\:flex-row {
+                    flex-direction: row;
+                }
+            }
+            
+            .tech-carousel {
+                overflow: hidden;
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .carousel-track {
+                white-space: nowrap;
+            }
+        </style>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <script>
+            
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        <style>
+            :root {
+                color-scheme: dark;
+            }
+            
+            body {
+                @apply bg-[#121212] text-gray-100;
+            }
+
+            .tech-icon {
+                filter: grayscale(100%) brightness(200%);
+                transition: all 0.3s ease;
+            }
+            .tech-icon:hover {
+                filter: none;
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            
+            .tech-carousel {
+                width: 100%;
+                padding: 1rem 0;
+            }
+            
+            .tech-track {
+                width: fit-content;
+                animation: scroll 20s linear infinite;
+            }
+            
+            .tech-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .tech-slide {
+                float: left;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-[#121212] text-gray-100">
+        
+<head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0RTF18BT4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-C0RTF18BT4');
+    </script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<header class="py-6 relative">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div class="flex justify-between items-center">
+                <a href="http://localhost:1313/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                    Amir
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>            
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
+                
+                
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="http://localhost:1313/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="http://localhost:1313/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                
+            </nav>
+            <div class="hidden md:flex justify-end">
+                <div class="flex items-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden transition-all duration-300">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6 border-b border-gray-800">
+                <span class="text-xl font-bold text-white">Menu</span>
+                <button id="mobile-menu-close" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                <a href="http://localhost:1313/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
+                <a href="http://localhost:1313/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                
+                <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                
+                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                
+                <a href="http://localhost:1313/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                
+            </nav>
+            <div class="mt-auto p-6 border-t border-gray-800">
+                <div class="flex items-center justify-center">
+                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
+                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    
+    function updateLocalTime() {
+        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
+        timeElements.forEach(element => {
+            if (element) {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                element.textContent = timeString;
+            }
+        });
+    }
+    updateLocalTime();
+    setInterval(updateLocalTime, 1000);
+
+    
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMobileMenu() {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        } else {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = ''; 
+        }
+    }
+
+    mobileMenuButton.addEventListener('click', toggleMobileMenu);
+    mobileMenuClose.addEventListener('click', toggleMobileMenu);
+
+    
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMobileMenu();
+        });
+    });
+
+    
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    if (themeToggleBtn) {
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        } else {
+            themeToggleLightIcon.classList.add('hidden');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    }
+</script> 
+        <main>
+            
+<div class="w-1/2 mx-auto py-12">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
+        <h1 class="text-4xl font-bold mb-4">OFTW3</h1>
+        
+        
+        <div class="prose prose-invert max-w-none">
+            <p><code>GRUNNUR</code></p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<p>It was time for the &ldquo;objective for the win&rdquo; conference. I&rsquo;d seen this advertised in the CyberSecurity discord, for which I am now president.</p>
+<p>I&rsquo;d never looked into Apple security, neither do I own any Apple devices. So this was a first, I thought why not? I love security so I might as well explore and find out which niche I want to fall into.</p>
+<p>This day would be a workshop day in which we cover the essentials of Mac Malware analysis with the GOAT, Patrick Wardle. But first let&rsquo;s go back, back to my preparation for this day.</p>
+<p>Objective See are focused on apple devices, so of course it&rsquo;s an i-device event. Do you see the issue yet?</p>
+<p>Well <strong>I don&rsquo;t own any Apple devices</strong>. Oh no, what do I do? Then I remembered something I had done in the past to ease my mum&rsquo;s transition from Mac to Linux (yes she now runs Linux as her daily-driver, all be it, she doesn&rsquo;t quite find the enjoyment of ricing her system and writing cool utility bash scripts on a daily basis). Anyways back to the main point, I decided I would… run a hackintosh VM. Well easier said than done (because I don&rsquo;t read the docs until my 3rd failure).</p>
+<p>So three&rsquo;s a cool project on github called OSX KVM, it&rsquo;s a simple install just run the: <code>fetch-macOS-v2.py</code> script. …</p>
+<p>Now came the issue, I redid the download process thrice because of this and each time took a good 2 hours. Do you know why? Because I refuse to read the docs until the problem consumes me.</p>
+<p>Anyway, tangent out of the way, let&rsquo;s get back to the day. Patrick&rsquo;s workshop day was heavily inspired by his book in terms of content and order (though I have to agree it&rsquo;s best to cover malware from it&rsquo;s initial access to its payload).</p>
+<p>So we started off with a look at mac malware its growth and infection vectors. From phishing links to 0day exploits we looked at all means of gaining initial access.</p>
+<p>From there we moved onto persistence, how does malware remain in a way such that even the good old fashioned classic of turning it &ldquo;off and on again&rdquo; doesn&rsquo;t work. It was during this section we looked at tradition login items, system agents, daemons and cronjobs. This is where my ear perked up because boy oh boy do I have experience with daemons and cronjobs, finally my scheduled script making comes to use!</p>
+<p>But, Mac does things differently, it stores these daemons in different directories, not the usual <code>/etc/systemd</code> (if you use systemd, some say it&rsquo;s bloatware). So we had login items, launch items, cron jobs, login and logout hooks, kernel extensions (another parallel, after all Mac OS is Unix based), browser plugins and many more.</p>
+<p>Then came payloads: browser script injectors, cryptominers, remote shells, remote execution, file exfiltrators and file encryptors (ransomware).</p>
+<p>This was followed by a lab that went through the content as well as the &ldquo;knock knock&rdquo; tool curated by Patrick himself.</p>
+<p>Next was an introduction to different MacOS specific file types as well as scripts. In case you haven&rsquo;t read my CTF write ups, we can use the <code>file</code> tool as is in Linux to identify files based of file headers.</p>
+<p>MacOS also has its own version of disk image files: <code>.dmg</code> which you can then mount to your filesystem and explore.</p>
+<p>Lastly comes MacOS&rsquo;s irregularities, these being packages which packages all files and dependencies required by an application, apple script which is a high level scripting language and plist files (you&rsquo;ll meet these a lot). This was followed by another lab to re-enforce the knowledge.</p>
+<p>You may notice a pattern emerging here: the use of supplementary labs to follow up every topic of learning. I found this great (though the labs were a little rushed) in consolidating my knowledge. Nevertheless, as Patrick had mentioned, we could always follow up on the labs in our own time.</p>
+<p>We then delved deeper into the Mach-O binary file and linked dependency libraries; a perfect segway into Static Binary Analysis.</p>
+<p>A few flags to look for included:</p>
+<ul>
+<li>file hashes</li>
+<li>Embedded ASCII strings</li>
+<li>Code Signing (one of Mac&rsquo;s easily circumventable security features)</li>
+<li>Packed binaries</li>
+<li>Encrypted binaries</li>
+</ul>
+<p>This was accompanied by a whistle stop tour of low level programming by explaining the register convention, assembly and objective-c. Patrick&rsquo;s disassembler of choice was Hopper though Chris would disagree (I agree binary ninja is better!).</p>
+<p>Next up was a cool static analysis lab where instead of using these proprietary tools, let&rsquo;s use what the NSA developed: Ghidra!</p>
+<p>It was around this point that we hard hypnotised and lured Patrick via social engineering techniques to go off a tangent and tell us stories about his past, including his time at the NSA. He told as everything (If the NSA reads this, I&rsquo;m just kidding Patrick knows how to keep a secret).</p>
+<p>Anyways for the stories that he did tell us, I leave this as an exercise for the reader - to attend one of his events, listen in and ask questions.</p>
+<p>Amazing! I&rsquo;ve always wanted to pull off the &ldquo;I leave this as an exercise for the reader&rdquo;. It sure is great when the author (or my lecturer) is explaining an extremely complex topic and throws that into the mix. I think it&rsquo;s a lazy tactic used by people to minimise their work explaining and torment the listener/reader who will spend countless hours trying to figure it out (at leats provide the solution).</p>
+<p>Due to this tangent, Patrick had to skip the sections on the new Arm architecture that the latest Macs use. Instead, we moved on to dynamic analysis and of malware. This is where Patrick (rightfully) plugged his tools: <a href="https://github.com/objective-see/ProcessMonitor">ProcessMonitor</a>, <a href="https://github.com/objective-see/FileMonitor">FileMonitor</a> and <a href="https://github.com/objective-see/Netiquette">Netiquette</a>.</p>
+<p>These tools are amazing when it comes to displaying process, file and network events respectfully, especially for malware detection and dynamic analysis on Mac. I never thought I&rsquo;d consider using a Mac but these tools might sweeten the deal when it comes to endpoint malware detection so thank you Patrick!</p>
+<p>Essentially, you would use these tools to look out for anomalous processes running, file deletion/writing (indication of ransomware) and strange network traffice (usually connection to C2s). We also looked at the good old classic tool: Wireshark. You can never go wrong with Wireshark when it comes to network traffic monitoring and it is definitely a must-have for nearly all user needs.</p>
+<p>Next came debugging an exceptionally important tactic in dynamic analysis. This would be useful in: decrypting strings (the malware does it for you) and analysing behaviour while controlling the program. Though I was already quite familiar with debuggers, given my experience with peda gdb when doing CTF challenges, I still found this section insightful.</p>
+<p>Unfortunately, I had to leave as I could not delay my departure any further as I had a coach to catch. Nevertheless, the day was extremely enjoyable and I was sure to attend the next!</p>
+<p>The second day kicked off with a series of engaging talks from leading experts in Mac and iOS security. It was an eye-opening experience to hear directly from professionals who are actively working in the field - many of whom are involved in real-world red teaming, IR (incident response), malware analysis and security architecture.</p>
+<h2 id="talk-1-iphone-backup-forensics">Talk 1: iPhone Backup Forensics</h2>
+<p>Speaker: Kinga Kieczkowska (@kieczkowska), Security Consultant at Rada Cyber Security</p>
+<p>The first talk provided a detailed overview of iPhone backup forensics. We started by looking at the process of creating an iPhone backup and it a hassle when compared to android (at least in my opinion considering I have an auto sync set up to my home server).</p>
+<p>Kinga then covered the key files contained within a backup:</p>
+<ul>
+<li><code>Info.plist</code> for general information on the the device and its state (including installed apps) when the backup is taken</li>
+<li><code>Status.plist</code> for metadata aboout the backup (e.g. eversion, creation start date etc)</li>
+<li><code>Manifest.plist</code> for details on the application bundles on the device. It also contains a Date though Kinga is not sure what the date represented. I haven&rsquo;t had the chance to look into it so if you do know please reach out to me.</li>
+<li><code>Manifest.db</code> which is an SQLite database file containing two tables. One of these tables being the files on the device (filterable by the unique hash fingerprint).</li>
+</ul>
+<p>Kinga then noted some files of interest in case you are doing forensics which would be the databases in which your SMS messages, Notes and Whatsapp messages are stored.</p>
+<p>She also made us aware of the open source backup analysis tool to aid in this process: <a href="https://github.com/abrignoni/iLEAPP">iLEAPP</a>.</p>
+<p>Overall, this talk was brilliant especially for someone who was not even aware that iPhones had a backup feature that was local. I definitely found it insightful and interesting and now I definitely know where to look when I obtain someone&rsquo;s backup files (so make sure to encrypt yours!). Thank you Kinga, it was great!</p>
+<h2 id="talk-2-come-reverse-engineer-malware-with-me">Talk 2: Come Reverse Engineer Malware With Me</h2>
+<p>Speaker: Chris Lopez (@L0psec), Senior macOS Security Researcher at Kandji</p>
+<p>Subsequently was Chris Lopez&rsquo;s talk and what it missed out on in the number of slides, it definitely made up in content and Chris definitely made known his fond opinions of Binary Ninja.</p>
+<p>This would be a reverse engineering session where we analysed the <a href="http://jamf.com/blog/signed-and-stealing-uncovering-new-insights-on-odyssey-infostealer/">Odyssey infostealer</a> malware sample. Specifically we analysed the dropper written in Swift, which the article linked had only mentioned in passing.</p>
+<p>One of the biggest threats posed by this malware was due to the facts that it had been both code signed but also notorised by Apple themselves (something that Patrick had mentioned and also wrote at great lengths about in his book).</p>
+<p>From the article, we can gather that the dropper presented a SwiftUI application that would reach out to a C2 server and retrieve an AppleScript payload using native Swift APIs before making this script downloadable and then executing it.</p>
+<p>Looking at the sample, we can see that the symbols have been mangled during compilation. This is where Binary Ninja&rsquo;s plugin (Swift Demangler) came handy.</p>
+<p>To understand that this is a Swift UI app we can easily look at it&rsquo;s dependent libraries and come to this conclusion. Chris then mentioned that since this UI app must spawn a process and there are only a few ways to do so using Swift, it will be easy to narrow down were this is done.</p>
+<p>In this case, the malware used <code>NSTask</code> ObjectiveC class. One thing that I&rsquo;ll definitely give to Binary Ninja that Chris made great use of was renaming subroutines and variables. Another cool thing I picked up here was the smooth integration of the lower-level ObjectiveC language with the higher level Swift language.</p>
+<p>We began by looking within the function that used the <code>NSTask</code> class to spawn the process that set the privileges and executed the payload. This function simply appended together the command as a string before running it as a process. We then reversed through the caller functions to find the subroutine responsible for connecting to the C2 server using NSURLsession and the Swift hardcoded URL that is converted into an ObjectiveC URL: <code>hxxps://allteching[.]xyz/auto</code>.</p>
+<p>By reverse engineering the program, we understood that the dropper reached out to the URL above in order to obtain a payload, for which it set permissions before executing.</p>
+<p>One thing I didn&rsquo;t quite understand was as to why we added an offset of 20 to a large string&rsquo;s address to get the address to read the string from. If you do know this, please let me know.</p>
+<p>Afterwards, I asked Chris as to why he loved Binary Ninja so much (rightly so, the UI and plugins are amazing) as well as about his BJJ background - considering I have started to pick up BJJ on my transition from boxing.</p>
+<p>Thank you Chris for discussing BJJ at lengths with me as well as your journey to malware analysis.</p>
+<h2 id="talk-3-from-alert-to-action-investigating-a-real-security-incident">Talk 3: From Alert to Action: Investigating a Real Security Incident</h2>
+<p>Speaker: Shannon McCormick, Senior Incident Responder at Salesforce</p>
+<p>Shannon provided a talk on Incident response as well as a demonstration based on a true story she faced. Firstly, she outlined the responsibilities of incident response, then we looked at the MITRE ATT&amp;CK Framework to understand the Incident repsonse investigation process.</p>
+<p>This involved looking for IOCs in the logs, forensics and some OSINT. In her example someone had been socially engineered by DPRK threat actors via the fake job interview on Linkedin method.</p>
+<p>This was definitely a fun talk and something I&rsquo;d love to explore further considering the variety of hats you would have to pick up and thus the surplus knowledge to be gained.</p>
+<p>Thank you Shannon for the truly insightful talk.</p>
+<h2 id="talk-4-mirror-mirror-restoring-reflective-code-loading-on-macos">Talk 4: Mirror Mirror: Restoring Reflective Code Loading on macOS</h2>
+<p>Author: Patrick Wardle, Founder, Objective-See Foundation</p>
+<p>This was one of the talks I was most excited for, Patrick had hooked me in with the first day of Mac malware analysis and now I was desperate for more.</p>
+<p>This talk would be on <strong>reflective &ldquo;in-memory&rdquo; code loading</strong> which is the execution of compiled code directly from memory with the payload never being written to disk (apparently if it is encrypted and written then it&rsquo;s still reflective?).</p>
+<p>Running payloads from memory is not as simple as copying it from secondary storage to memory (they have different underlying architecture). Now you may ask: isn&rsquo;t all code loaded to memory before being ran?</p>
+<p>This is true and it&rsquo;s done by the loader that reads the binary from the disk and maps it and any dependencies (dynamic libraries) into memory. It then applies relocations and resolves symbols before excuting initialisers to initialise the environment for the binary and trasferring control to <code>main()</code>.</p>
+<p>Initially malware used dyld&rsquo;s (the loader&rsquo;s) functionality to load binaries into memory however with dyld 3, this loader API would no longer load to memory without first writing the in-memory payload to the disk. The memory loading functionality was rarely used by genuine apps and therefore the deprecation is well explanatory.</p>
+<p>How can we get around this?</p>
+<p>We could try using a RAM disk, allocate a section of RAM as if it were a filesystem however these RAM disk actions still create file events as the OS treats the RAM disk as the ordinary filesystem nevertheless the malware is no longer persistent.</p>
+<p>We could try changing the file name in the template where the filename is written to the disk as part of the loader&rsquo;s API. This ensures it is no longer added in the loader, we can now patch the loader, however a file (not the payload) is still created and the event does show up.</p>
+<p>This is where Patrick thought of an ingenious solution of simply patching the previous dyld loader version and using it&rsquo;s vulnerable memory loading functionality we could essentially travel back in time to when things were all well and vulnerable.</p>
+<p>For the final cherry on top, Patrick wanted some Objective C support and found an article called &ldquo;LLVM JIT, Objective-C and Swift
+on macOS: knowledge dump&rdquo; by Stanislav Pankevich on Objective C support in memory loaded code.</p>
+<p>However, hardened Mac runtimes can protect against this as they enforce code signing which compares the memory binary&rsquo;s signature to the one on-disk. To get around this, one can add exception entitlements to the custom loader, which many genuine applications do indeed utilise. All you would need to do after this is submit your custom laoder for notarisation, which should happen as there is nothing inherently malicious about the loader and Apple have even notarised malware in the past.</p>
+<p>As a malicious actor, why do we want reflective code loading?</p>
+<p>Apple doesn&rsquo;t allow <strong>any</strong> process (including security tools) from reading the memory of other processes - for privacy reasons. However, this is an nstance when privacy sacrifices security.</p>
+<p>This means there are no available detection protections in place for this and it remains a huge threat to Mac security. The only solution as of now would be for the monitorig and detection of payload behaviour.</p>
+<p>Apple please provide trusted security tools with the ability to read memory completely. This will solve many issues.</p>
+<p>Thank you Patrick for this talk, it was really interesting and now I know how I will go about commit to my master plan of a Mac port of memory-loading BonziBuddy on every Macbook across the world.</p>
+<p>Small note:
+It was also interesting to see GAUSS (anther memory loaded malware variant) that has remained a mystery since 2012 as it has never been decrypted.</p>
+<h2 id="talk-5-how-far-can-we-push-ai-for-detection">Talk 5: How Far Can We Push AI for Detection?</h2>
+<p>Author: Martina Tivadar, Research Assistant at iVerify</p>
+<p>This talk focused on the use of LLMs (with a comparison to previous machine learning classification models) to classify Mac malware.</p>
+<p>Martina went through the entire pipeline from data collection by grabbing malware samples from the <a href="http://github.com/objective-see/Malware">Objective-see repository</a>, running the samples and then extracting a log of events using the Apple Endpoint Security Framework API.</p>
+<p>We then went on to preprocessing, for classical machine learning models this would require encoding of categorical data, handling missing values, feature engineering, balancing the dataset and scaling data however, when using LLMs, all that was required was filtering the logs as they started off too large.</p>
+<p>Martina decided the best methodology for this would be to prioritise recent activity and only keep significant data results.</p>
+<p>There was then a brief explanation of LLMs as well as the different OpenAI models before we looked at prompt engineering.</p>
+<p>This included 6 different prompt types:</p>
+<ul>
+<li><strong>Zero-shot</strong> where there is no extra instruction</li>
+<li><strong>One-shot</strong> where an extra example is provided to the model</li>
+<li><strong>Few-shot</strong> where a few examples are provided to &ldquo;teach&rdquo; the model the pattern</li>
+<li><strong>Chain-of-thought</strong> where instructions on how the AI should reason and think is given step by step</li>
+<li><strong>Negative</strong> where the model is told what not to do</li>
+<li><strong>Hybrid</strong> a combination of the types listed above.</li>
+</ul>
+<p>Martina then did an experiment with two independent variables, those being the:</p>
+<ul>
+<li>OpenAI model (3 variants)</li>
+<li>The prompt type</li>
+</ul>
+<p>The dependent variables that would be measured and reported were:</p>
+<ul>
+<li>Accuracy</li>
+<li>Precision</li>
+<li>Recall</li>
+<li>F1 score</li>
+</ul>
+<p>The results were zero-shot prompting with no additional instructions worked best overall though the exact scores were not disclosed. It caught 100% of malware with a few false positives and in the case of malware a false positive is much better than a false negative.</p>
+<p>Chain-of-thought and few shot prompts came next with one-shot and negative prompts doing worse. Though an interesting note was that one-shot and negative prompts had fewer false positives due to their caution but this resulted in many false negatives, which would let malware evade them.</p>
+<p>Martina then ended the presentation off on how the use of LLMs have really condensed and simplified the machine learning pipeline making their use much more accessible.</p>
+<p>During the happy hour mentioned below, I had asked Martina if tailor made machine learning models would perform better to which she answered that, surprisingly, performance was quite similar.</p>
+<h2 id="talk-6-a-snake-in-the-apple-tree-bridging-python-and-objective-c-for-red-team-tradecraft">Talk 6: A Snake in the Apple Tree: Bridging Python and Objective-C for Red Team Tradecraft</h2>
+<p>Author: Luke Roberts (@rookuu), Senior Red Team Engineer at GitHub and co-founder of Phorion.</p>
+<p>This was the final talk of the day but definitely a really interesting one considering red teaming is one of my aspirations.</p>
+<p>The talk covered using the <strong>Mythic</strong> open-source C2 framework (think of it like an alternative for cobalt strike) and <strong>Medusa</strong>, an open-source implant that speaks back to the Mythic C2 written in python.</p>
+<p>Medusa has functionality for credential theft, persistence, keylogging, screenshots and sniffing clipboards. Luke focused on implementing a clipboard snipper for macOS as the functionality only worked for Python 2.7.</p>
+<p>Now we could use libraries that run commands however this would stick out like a sore thumb in blue teams&rsquo; logs. <code>pbpaste</code> was run? By Python? On the terminal? That&rsquo;s definitely something you would look into.</p>
+<p>Objective-C APIs can be used instead as it&rsquo;s direct communication with the OS without running a boilerplate, bloat library on top that is easily detected.</p>
+<p>Objective-C unlike C has a very powerful runtime instead of having all functionality implemented at the compiler level. This allows for dynamic, runtime changes for example adding methods to classes which is usal</p>
+<h2 id="happy-hour">Happy hour</h2>
+<p>I then spent the happy hour:</p>
+<ul>
+<li>Asking Luke for career direction advice (I&rsquo;m still not sure whether I want to specialise in malware analysis, red teaming or vulnerability research). Luke mentioned that I should further explore and learn which area I lean towards. For red teaming he recommended doing some bug bounties for actual practical experience instead of just hack the box as well as reading write ups for malware and vulnerability research.</li>
+<li>Asking Patrick about why anti-malware tools don&rsquo;t check for different variants of loaders being used that are not in line with the current released loader. For which he answered, that would be a great idea for a tool and definitely something he would do if he created a tool with that within its scope. I then asked why Apple notarised this malicious loaders - allowing them to run - for which he had as much of an idea as me</li>
+<li>I had also asked Patrick: in terms of of a bootstrapping perspective, how would the malware author ensure the payload that downloads and compiles the malicious loader is executed? He then responded that this would require stager/dropper to fetch and switch the loader so that we can use apples deprecated API to memory load our main payload</li>
+</ul>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+        
+<footer class="mt-32 text-center">
+    <div class="max-w-3xl mx-auto">
+        <div class="border-t border-gray-800 pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">                
+                <p class="text-gray-500 text-xm ">© 2025 Amir</p>
+                <p class="text-gray-500 text-xm pb-12">Built using <a href="https://gohugo.io/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">Hugo</a>. Take a look at my <a href="https://github.com/prxshetty/" target="_blank" class="animated-link text-gray-400 hover:text-gray-200">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .animated-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .animated-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        left: 0;
+        background-color: #ffffff;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    .animated-link:hover::after {
+        width: 100%;
+    }
+</style> 
+    </body>
+</html> 
