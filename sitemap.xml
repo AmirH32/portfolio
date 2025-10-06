@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://AmirH32.github.io/conferences/</loc>
+    <loc>http://localhost:1313/conferences/</loc>
     <lastmod>2025-09-30T19:11:34+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/conferences/oftw3/</loc>
+    <loc>http://localhost:1313/conferences/oftw3/</loc>
     <lastmod>2025-09-30T19:11:34+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/misc/</loc>
+    <loc>http://localhost:1313/misc/</loc>
     <lastmod>2025-04-20T13:37:56+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-04-20T13:37:56+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/categories/misc/</loc>
+    <loc>http://localhost:1313/categories/misc/</loc>
     <lastmod>2025-04-20T13:37:56+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/misc/pico-network-forensics/</loc>
+    <loc>http://localhost:1313/misc/pico-network-forensics/</loc>
     <lastmod>2025-04-20T13:37:56+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/misc/pico-linux-challs/</loc>
+    <loc>http://localhost:1313/misc/pico-linux-challs/</loc>
     <lastmod>2025-04-20T13:13:13+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/misc/pico-disk-forensics/</loc>
+    <loc>http://localhost:1313/misc/pico-disk-forensics/</loc>
     <lastmod>2025-04-20T13:12:43+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/ctfs/</loc>
+    <loc>http://localhost:1313/ctfs/</loc>
     <lastmod>2025-04-07T14:18:49+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/categories/ctf/</loc>
+    <loc>http://localhost:1313/categories/ctf/</loc>
     <lastmod>2025-04-07T14:18:49+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/ctfs/pico-ctf-2025/</loc>
+    <loc>http://localhost:1313/ctfs/pico-ctf-2025/</loc>
     <lastmod>2025-04-07T14:18:49+01:00</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2023-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/blogs/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2023-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2023-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/experience/</loc>
+    <loc>http://localhost:1313/experience/</loc>
     <lastmod>2023-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2023-03-15T10:30:00+05:30</lastmod>
   </url><url>
-    <loc>https://AmirH32.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

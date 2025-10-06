@@ -2,45 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Misc on Amir&#39;s website</title>
-    <link>https://AmirH32.github.io/categories/misc/</link>
+    <link>http://localhost:1313/categories/misc/</link>
     <description>Recent content in Misc on Amir&#39;s website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Apr 2025 13:37:56 +0100</lastBuildDate><atom:link href="https://AmirH32.github.io/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Apr 2025 13:37:56 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PICO Network Forensics</title>
-      <link>https://AmirH32.github.io/misc/pico-network-forensics/</link>
+      <link>http://localhost:1313/misc/pico-network-forensics/</link>
       <pubDate>Sun, 20 Apr 2025 13:37:56 +0100</pubDate>
-      
-      <guid>https://AmirH32.github.io/misc/pico-network-forensics/</guid>
-      <description></description>
+      <guid>http://localhost:1313/misc/pico-network-forensics/</guid>
+      <description>&lt;h1 id=&#34;packets-primer&#34;&gt;Packets Primer&lt;/h1&gt;&#xA;&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;&#xA;&lt;p&gt;Download the packet capture file and use packet analysis software to find the flag.&lt;/p&gt;&#xA;&lt;h3 id=&#34;method&#34;&gt;Method&lt;/h3&gt;&#xA;&lt;p&gt;For this challenge we can use wireshark to inspect the pcap file. Upon doing so, we see 9 packets.&lt;/p&gt;&#xA;&lt;p&gt;If we look at the protocol field of the packets, 4 of these are ARP packets. To filer these out we can do &lt;code&gt;!arp&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;These leaves us with 5 packets, the first 3 are in the connection setup phase (TCP handshake).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PICO Linux Challs</title>
-      <link>https://AmirH32.github.io/misc/pico-linux-challs/</link>
+      <link>http://localhost:1313/misc/pico-linux-challs/</link>
       <pubDate>Sun, 20 Apr 2025 13:13:13 +0100</pubDate>
-      
-      <guid>https://AmirH32.github.io/misc/pico-linux-challs/</guid>
-      <description>Magikarp Ground Mission We can connect to the machine via SSH and then authenticate with a password.
-Then if we type ls and cat the &amp;ldquo;1of3.flag.txt&amp;rdquo; file, we get the first part of the flag. We can then follow the same procedure for &amp;ldquo;instructions-to-2of3.txt&amp;rdquo;.
-This tells: &amp;ldquo;Next, go to the root of all things, more succinctly /&amp;rdquo;.
-This can be done with cd /. We then follow with ls to see the contents of the directory.</description>
+      <guid>http://localhost:1313/misc/pico-linux-challs/</guid>
+      <description>&lt;h1 id=&#34;magikarp-ground-mission&#34;&gt;Magikarp Ground Mission&lt;/h1&gt;&#xA;&lt;p&gt;We can connect to the machine via SSH and then authenticate with a password.&lt;/p&gt;&#xA;&lt;p&gt;Then if we type ls and cat the &amp;ldquo;1of3.flag.txt&amp;rdquo; file, we get the first part of the flag. We can then follow the same procedure for &amp;ldquo;instructions-to-2of3.txt&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This tells: &amp;ldquo;Next, go to the root of all things, more succinctly &lt;code&gt;/&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;This can be done with &lt;code&gt;cd /&lt;/code&gt;. We then follow with ls to see the contents of the directory. Here we can find &amp;ldquo;2of3.flag.txt&amp;rdquo; that we can then &lt;code&gt;cat&lt;/code&gt; to get the next part of the flag.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PICO Disk Forensics</title>
-      <link>https://AmirH32.github.io/misc/pico-disk-forensics/</link>
+      <link>http://localhost:1313/misc/pico-disk-forensics/</link>
       <pubDate>Sun, 20 Apr 2025 13:12:43 +0100</pubDate>
-      
-      <guid>https://AmirH32.github.io/misc/pico-disk-forensics/</guid>
-      <description>Big Zip Again, download the big-zip-files.zip file from the challenge.
-If we run file on this file, we can see that it is a zip file.
-Now unzip the file and cd into its directory.
-To search all files and file names for a specific term, use the command:
-grep &amp;quot;&amp;lt;search term&amp;gt;&amp;quot; -r .
-Where the search term is &amp;ldquo;picoCTF&amp;rdquo; and -r is the recursive flag which will search through subdirectories.</description>
+      <guid>http://localhost:1313/misc/pico-disk-forensics/</guid>
+      <description>&lt;h1 id=&#34;big-zip&#34;&gt;Big Zip&lt;/h1&gt;&#xA;&lt;p&gt;Again, download the big-zip-files.zip file from the challenge.&lt;/p&gt;&#xA;&lt;p&gt;If we run &lt;code&gt;file&lt;/code&gt; on this file, we can see that it is a zip file.&lt;/p&gt;&#xA;&lt;p&gt;Now unzip the file and &lt;code&gt;cd&lt;/code&gt; into its directory.&lt;/p&gt;&#xA;&lt;p&gt;To search all files and file names for a specific term, use the command:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;grep &amp;quot;&amp;lt;search term&amp;gt;&amp;quot; -r .&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Where the search term is &amp;ldquo;picoCTF&amp;rdquo; and &lt;code&gt;-r&lt;/code&gt; is the recursive flag which will search through subdirectories.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

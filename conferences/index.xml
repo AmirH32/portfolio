@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences on Amir&#39;s website</title>
-    <link>https://AmirH32.github.io/conferences/</link>
+    <link>http://localhost:1313/conferences/</link>
     <description>Recent content in Conferences on Amir&#39;s website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Sep 2025 19:11:34 +0100</lastBuildDate>
-    <atom:link href="https://AmirH32.github.io/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/conferences/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OFTW3</title>
-      <link>https://AmirH32.github.io/conferences/oftw3/</link>
+      <link>http://localhost:1313/conferences/oftw3/</link>
       <pubDate>Tue, 30 Sep 2025 19:11:34 +0100</pubDate>
-      <guid>https://AmirH32.github.io/conferences/oftw3/</guid>
+      <guid>http://localhost:1313/conferences/oftw3/</guid>
       <description>&lt;p&gt;My first &amp;ldquo;objective for the win&amp;rdquo; conference. I&amp;rsquo;d seen this advertised in the CyberSecurity discord, for which I am now president, and decided this would be a great opportunity to learn more about Apply device security.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;d never looked into Apple security, neither do I own any Apple devices. So this was a first, I thought why not? I love security so I might as well explore and find out which niche I want to fall into.&lt;/p&gt;</description>
     </item>
   </channel>

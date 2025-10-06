@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-    <head>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About Me - Amir&#39;s website</title>
         
         
-        <link rel="apple-touch-icon" sizes="180x180" href="https://AmirH32.github.io/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://AmirH32.github.io/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://AmirH32.github.io/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="https://AmirH32.github.io/favicon_io/site.webmanifest">        
+        <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="http://localhost:1313/favicon_io/site.webmanifest">        
         <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
         <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style">
         
@@ -44,7 +44,18 @@
                 width: 100%;
                 padding: 1rem 0;
             }
-            
+
+            ul, ol {
+                list-style: revert !important;
+                padding-left: revert !important;
+                margin-left: revert !important;
+                margin-bottom: 1rem !important;
+            }
+
+            li {
+                display: list-item !important;
+            }
+  
             .carousel-track {
                 white-space: nowrap;
             }
@@ -131,7 +142,7 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex justify-between items-center">
-                <a href="https://AmirH32.github.io/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
+                <a href="http://localhost:1313/" class="text-xl font-bold text-white hover:text-gray-300 transition-colors duration-300">
                     Amir
                 </a>
                 
@@ -145,15 +156,15 @@
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 
                 
-                <a href="https://AmirH32.github.io/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
                 
-                <a href="https://AmirH32.github.io/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                <a href="http://localhost:1313/experience/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
                 
-                <a href="https://AmirH32.github.io/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="https://AmirH32.github.io/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
-                <a href="https://AmirH32.github.io/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                <a href="http://localhost:1313/contact/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
                 
             </nav>
             <div class="hidden md:flex justify-end">
@@ -178,15 +189,15 @@
             </div>
             <nav class="flex flex-col p-6 space-y-4">
                 
-                <a href="https://AmirH32.github.io/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
+                <a href="http://localhost:1313/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">About</a>
                 
-                <a href="https://AmirH32.github.io/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
+                <a href="http://localhost:1313/experience/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Experience</a>
                 
-                <a href="https://AmirH32.github.io/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
+                <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="https://AmirH32.github.io/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
-                <a href="https://AmirH32.github.io/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
+                <a href="http://localhost:1313/contact/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Contact</a>
                 
             </nav>
             <div class="mt-auto p-6 border-t border-gray-800">
@@ -290,12 +301,11 @@
                 <div class="prose prose-invert prose-lg max-w-none">
                     <div class="text-lg">
                         <p>If you are looking to employ me please skip below and go to the &ldquo;<strong>For future employers</strong>&rdquo; section.</p>
-                        <ul class="list-disc space-y-2">
-                            <li class="text-base">As a wise man once said, &ldquo;I&rsquo;m the smartest programmer thats ever lived.&rdquo;</li>
-                            <li class="text-base">I am this close to going off the grid and living in the middle of nowhere.</li>
-                            <li class="text-base">Vim + Emacs = Doom Emacs</li>
-                            <li class="text-base">There's only public, I don't believe in private</li>
-                        </ul>
+<ul>
+<li>As a wise man once said, &ldquo;I&rsquo;m the smartest programmer thats ever lived.&rdquo;</li>
+<li>I am this close to going off the grid and living in the middle of nowhere.</li>
+<li>Vim + Emacs = Doom Emacs</li>
+</ul>
 <h3 id="for-future-employers">For future employers:</h3>
 <p>I am an 2nd year Undergraduate student at the University Of Cambridge and a keen CyberSecurity enthusiast (espeically when it comes to red teaming and offensive security).</p>
 
